@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outerbank</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="/outerbank/favicon.png" />
+    
+    <script type="module" crossorigin src="/outerbank/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/outerbank/assets/vendor-0d74985d.js">
+    <link rel="stylesheet" href="/outerbank/assets/vendor-fb046256.css">
+    <link rel="stylesheet" href="/outerbank/assets/styles-9ef33246.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">About the Game</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gameplay">How to Play</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#features">Core Systems</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#progression"
+            >Visual Style</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gallery">Gallery</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#experience"
+            >Gameplay Loop</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="24" height="24">
+          <use href="/outerbank/assets/sprite-b5029c43.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="24" height="24">
+          <use href="/outerbank/assets/sprite-b5029c43.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-wrapper">
+          <h1 class="hero-main-title">Mine. Craft. Expand.</h1>
+          <p class="hero-subtitle">A pixel world full of possibilities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="section-title-wrapper about-title-wrapper">
+    <div class="container section-title-container">
+      <img
+        class="title-img"
+        src="data:image/png;base64,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"
+        alt="Screenshot of the game"
+        width="32"
+        height="32"
+      />
+      <h2 class="section-title about-title">About the Game</h2>
+    </div>
+  </div>
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <div class="about-content-wrapper">
+        <p class="section-subtitle about-subtitle">Think sandbox game</p>
+        <p class="section-secondary-subtitle about-secondary-subtitle">
+          but it actually gives you some idea of what to do next
+        </p>
+        <picture>
+          <source
+            srcset="/outerbank/assets/about-bg-desk-431b199a.png "
+            media="(min-width: 1440px)"
+            width="1200"
+            height="453" />
+          <source
+            srcset="/outerbank/assets/about-bg-mob-5c3c12c3.png "
+            width="343"
+            height="224" />
+          <img
+            class="about-img"
+            src="/outerbank/assets/about-bg-mob-5c3c12c3.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="224"
+            loading="lazy"
+        /></picture>
+        <p class="about-text">
+          You can go wherever you want in Pixel Forge, but it'll still nudge you
+          toward learning new crafting recipes.<br />
+          Starting with basic tools, players unlock more advanced structures,
+          items, and areas.<br />
+          Seriously, everything counts - that random tree you chopped down?
+          You'll probably use it for something awesome later.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gameplay-section section" id="gameplay">
+  <div class="section-title-wrapper benefits-title-wrapper">
+    <div class="container section-title-container">
+      <img
+        class="title-img"
+        src="data:image/png;base64,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"
+        alt="Screenshot of the game"
+        width="32"
+        height="32"
+      />
+      <h2 class="section-title about-title">How To Play</h2>
+    </div>
+  </div>
+  <div class="gameplay-bg-wrapper">
+    <div class="container gameplay-container">
+      <p class="section-subtitle gameplay-subtitle">Gather, craft, survive</p>
+      <ul class="gameplay-list">
+        <li class="gameplay-slide">
+          <picture>
+            <source
+              srcset="/outerbank/assets/gameplay-img1-desk-0c8f17a9.png "
+              media="(min-width: 1440px)"
+              width="333"
+              height="338" />
+            <source
+              srcset="/outerbank/assets/gameplay-img1-mob-b47f53e0.png "
+              width="333"
+              height="338" />
+            <img
+              class="gameplay-item-img"
+              src="/outerbank/assets/gameplay-img1-mob-b47f53e0.png"
+              alt="Screenshot of the game"
+              width="333"
+              height="338"
+              loading="lazy"
+          /></picture>
+        </li>
+        <li class="gameplay-slide">
+          <picture>
+            <source
+              srcset="/outerbank/assets/gameplay-img2-desk-6276033a.png "
+              media="(min-width: 1440px)"
+              width="333"
+              height="338" />
+            <source
+              srcset="/outerbank/assets/gameplay-img2-mob-234b5ac8.png "
+              width="333"
+              height="338" />
+            <img
+              class="gameplay-item-img"
+              src="/outerbank/assets/gameplay-img2-mob-234b5ac8.png"
+              alt="Screenshot of the game"
+              width="333"
+              height="338"
+              loading="lazy"
+          /></picture>
+        </li>
+        <li class="gameplay-slide">
+          <picture>
+            <source
+              srcset="/outerbank/assets/gameplay-img3-desk-45d5757f.png "
+              media="(min-width: 1440px)"
+              width="333"
+              height="338" />
+            <source
+              srcset="/outerbank/assets/gameplay-img3-mob-faaed9d4.png "
+              width="333"
+              height="338" />
+            <img
+              class="gameplay-item-img"
+              src="/outerbank/assets/gameplay-img3-mob-faaed9d4.png"
+              alt="Screenshot of the game"
+              width="333"
+              height="338"
+              loading="lazy"
+          /></picture>
+        </li>
+        <li class="gameplay-slide">
+          <picture>
+            <source
+              srcset="/outerbank/assets/gameplay-img4-desk-20443a46.png "
+              media="(min-width: 1440px)"
+              width="520"
+              height="338" />
+            <source
+              srcset="/outerbank/assets/gameplay-img4-mob-5a37e260.png "
+              width="333"
+              height="338" />
+            <img
+              class="gameplay-item-img"
+              src="/outerbank/assets/gameplay-img4-mob-5a37e260.png"
+              alt="Screenshot of the game"
+              width="333"
+              height="338"
+              loading="lazy"
+          /></picture>
+        </li>
+        <li class="gameplay-slide">
+          <picture>
+            <source
+              srcset="/outerbank/assets/gameplay-img5-desk-0aac0352.png "
+              media="(min-width: 1440px)"
+              width="520"
+              height="338" />
+            <source
+              srcset="/outerbank/assets/gameplay-img5-mob-861422f9.png "
+              width="333"
+              height="338" />
+            <img
+              class="gameplay-item-img"
+              src="/outerbank/assets/gameplay-img5-mob-861422f9.png"
+              alt="Screenshot of the game"
+              width="333"
+              height="338"
+              loading="lazy"
+          /></picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section features-section" id="features">
+  <div class="section-title-wrapper features-title-wrapper">
+    <div class="container section-title-container">
+      <img
+        class="title-img"
+        src="data:image/png;base64,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"
+        alt="Screenshot of the game"
+        width="32"
+        height="32"
+      />
+      <h2 class="section-title about-title">Core Systems</h2>
+    </div>
+  </div>
+  <div class="features-bg-wrapper">
+    <div class="container features-container">
+      <div class="features-content-wrapper">
+        <p class="section-subtitle features-subtitle">Easy to pick up</p>
+        <p class="section-secondary-subtitle features-secondary-subtitle">
+          but there's always something new to unlock
+        </p>
+        <ul class="features-list">
+          <li class="features-slide">
+            <img
+              class="features-img"
+              src="/outerbank/assets/features-img1-c6eb31cb.png"
+              alt="Screenshot of the game"
+              width="120"
+              height="91"
+            />
+            <div class="features-item-text-wrapper">
+              <p class="features-item-title">Resource Gathering</p>
+              <p class="features-item-text">
+                You're basically always picking up stuff.
+              </p>
+            </div>
+          </li>
+          <li class="features-slide">
+            <img
+              class="features-img"
+              src="/outerbank/assets/features-img2-70541d3b.png"
+              alt="Screenshot of the game"
+              width="120"
+              height="91"
+            />
+            <div class="features-item-text-wrapper">
+              <p class="features-item-title">Crafting Tree</p>
+              <p class="features-item-text">Unlock new recipes step by step.</p>
+            </div>
+          </li>
+          <li class="features-slide">
+            <img
+              class="features-img"
+              src="/outerbank/assets/features-img3-3fab1398.png"
+              alt="Screenshot of the game"
+              width="120"
+              height="91"
+            />
+            <div class="features-item-text-wrapper">
+              <p class="features-item-title">Building System</p>
+              <p class="features-item-text">Place and upgrade structures.</p>
+            </div>
+          </li>
+          <li class="features-slide">
+            <img
+              class="features-img"
+              src="/outerbank/assets/features-img4-178a4c86.png"
+              alt="Screenshot of the game"
+              width="120"
+              height="91"
+            />
+            <div class="features-item-text-wrapper">
+              <p class="features-item-title">Exploration Layer</p>
+              <p class="features-item-text">
+                New zones introduce new materials.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section progression-section" id="progression">
+  <div class="section-title-wrapper progression-title-wrapper">
+    <div class="container section-title-container">
+      <img
+        class="title-img"
+        src="data:image/png;base64,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"
+        alt="Screenshot of the game"
+        width="32"
+        height="32"
+      />
+      <h2 class="section-title progression-title">Visual Style</h2>
+    </div>
+  </div>
+  <div class="progression-bg-wrapper">
+    <div class="container progression-container">
+      <div class="progression-content-wrapper">
+        <p class="section-subtitle progression-subtitle">Classic pixel art</p>
+        <p class="section-secondary-subtitle progression-secondary-subtitle">
+          that's easy on the eyes but still has personality
+        </p>
+        <picture>
+          <source
+            srcset="/outerbank/assets/progression-bg-desk-7af59ff3.png "
+            media="(min-width: 1440px)"
+            width="1200"
+            height="520" />
+          <source
+            srcset="/outerbank/assets/progression-bg-mob-19836fba.png "
+            width="343"
+            height="277" />
+          <img
+            class="progression-img"
+            src="/outerbank/assets/progression-bg-mob-19836fba.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="277"
+            loading="lazy"
+        /></picture>
+        <p class="progression-text">
+          We went with pixel art that pops off the screen - nothing too fancy
+          with the animations, but it looks good.<br />
+          You can actually tell what everything is, and it's got that old-school
+          vibe that hits right in the feels.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gallery-section section" id="gallery">
+  <div class="section-title-wrapper benefits-title-wrapper">
+    <div class="container section-title-container">
+      <img
+        class="title-img"
+        src="data:image/png;base64,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"
+        alt="Screenshot of the game"
+        width="32"
+        height="32"
+      />
+      <h2 class="section-title progression-title">Gallery</h2>
+    </div>
+  </div>
+  <div class="gallery-bg-wrapper">
+    <div class="container gallery-container">
+      <p class="section-subtitle gallery-subtitle">Pixel moments</p>
+      <div class="gallery-swiper-container">
+        <ul class="swiper-wrapper gallery-swiper-wrapper">
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-item-img"
+              src="/outerbank/assets/gallery-img1-mob-c53bdb35.png"
+              alt="Screenshot of the game"
+              width="293"
+              height="590"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-item-img"
+              src="/outerbank/assets/gallery-img2-mob-a86f4d6b.png"
+              alt="Screenshot of the game"
+              width="293"
+              height="590"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-item-img"
+              src="/outerbank/assets/gallery-img3-mob-21d6ecf2.png"
+              alt="Screenshot of the game"
+              width="293"
+              height="590"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-item-img"
+              src="/outerbank/assets/gallery-img4-mob-953a024f.png"
+              alt="Screenshot of the game"
+              width="293"
+              height="590"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-item-img"
+              src="/outerbank/assets/gallery-img5-mob-90b8d8a8.png"
+              alt="Screenshot of the game"
+              width="293"
+              height="590"
+              loading="lazy"
+            />
+          </li>
+          <li class="swiper-slide gallery-slide">
+            <img
+              class="gallery-item-img"
+              src="/outerbank/assets/gallery-img6-mob-f10c162a.png"
+              alt="Screenshot of the game"
+              width="293"
+              height="590"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+        <div class="controls gallery-controls">
+          <button
+            class="arrow-btn"
+            id="galleryLeftArrow"
+            aria-label="Previous slide"
+          >
+            <svg class="arrow-icon" width="48" height="48">
+              <use href="/outerbank/assets/sprite-b5029c43.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button
+            class="arrow-btn"
+            id="galleryRightArrow"
+            aria-label="Next slide"
+          >
+            <svg class="arrow-icon" width="48" height="48">
+              <use href="/outerbank/assets/sprite-b5029c43.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section experience-section" id="experience">
+  <div class="section-title-wrapper experience-title-wrapper">
+    <div class="container section-title-container">
+      <img
+        class="title-img"
+        src="data:image/png;base64,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"
+        alt="Screenshot of the game"
+        width="32"
+        height="32"
+      />
+      <h2 class="section-title progression-title">Gameplay Loop</h2>
+    </div>
+  </div>
+  <div class="experience-bg-wrapper">
+    <div class="container experience-container">
+      <div class="experience-content-wrapper">
+        <p class="section-subtitle experience-subtitle">
+          Why players keep going
+        </p>
+        <p class="experience-text">
+          You've got goals to work toward, but you can still build whatever
+          weird castle you want.<br />
+          You can actually see yourself getting better at stuff.
+        </p>
+        <ul class="experience-list">
+          <li class="experience-slide">
+            <img
+              class="experience-img"
+              src="/outerbank/assets/experience-img1-8ed7470a.png"
+              alt="Screenshot of the game"
+              width="130"
+              height="143"
+            />
+            <p class="experience-item-text">Constant unlocking of new items</p>
+          </li>
+          <li class="experience-slide">
+            <img
+              class="experience-img"
+              src="/outerbank/assets/experience-img2-ef1adb91.png"
+              alt="Screenshot of the game"
+              width="130"
+              height="143"
+            />
+            <p class="experience-item-text">Freedom to build and explore</p>
+          </li>
+          <li class="experience-slide">
+            <img
+              class="experience-img"
+              src="/outerbank/assets/experience-img3-e55785b1.png"
+              alt="Screenshot of the game"
+              width="130"
+              height="143"
+            />
+            <p class="experience-item-text">Satisfying upgrade system</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="section-title-wrapper faq-title-wrapper">
+    <div class="container section-title-container">
+      <img
+        class="title-img"
+        src="data:image/png;base64,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"
+        alt="Screenshot of the game"
+        width="32"
+        height="32"
+      />
+      <h2 class="section-title progression-title">FAQ</h2>
+    </div>
+  </div>
+  <div class="faq-bg-wrapper">
+    <div class="container faq-container">
+      <p class="section-subtitle faq-subtitle">Quick answers</p>
+      <ul class="faq-list">
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Is the game open-world?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/outerbank/assets/sprite-b5029c43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">Yes, with structured progression.</p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Is crafting complex?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/outerbank/assets/sprite-b5029c43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">It starts simple and grows over time.</p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Can I build freely?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/outerbank/assets/sprite-b5029c43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">Yes, within the game system.</p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Are there enemies?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/outerbank/assets/sprite-b5029c43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">Light combat elements may appear.</p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Is it suitable for casual play?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/outerbank/assets/sprite-b5029c43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">Yes, but also rewarding long-term.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section contact-section" id="contact">
+  <div class="contact-section-wrapper">
+    <div class="section-title-wrapper contact-title-wrapper">
+      <div class="container section-title-container">
+        <img
+          class="title-img"
+          src="data:image/png;base64,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"
+          alt="Screenshot of the game"
+          width="32"
+          height="32"
+        />
+        <h2 class="section-title progression-title">Contact</h2>
+      </div>
+    </div>
+    <div class="contact-bg-wrapper">
+      <div class="container contact-container">
+        <div class="contact-content-wrapper">
+          <p class="section-subtitle contact-subtitle">Stay connected</p>
+          <a href="mailto:info@outerbank.pro" class="contact-email-link">
+            <svg class="email-icon" width="32" height="32">
+              <use href="/outerbank/assets/sprite-b5029c43.svg#icon-email"></use></svg
+            ><span>info@outerbank.pro</span></a
+          >
+        </div>
+        <picture>
+          <source
+            srcset="/outerbank/assets/contact-bg-desk-8c3feb4e.jpg "
+            media="(min-width: 1440px)"
+            width="1440"
+            height="480" />
+          <source
+            srcset="/outerbank/assets/contact-bg-mob-97256e51.jpg "
+            width="375"
+            height="307" />
+          <img
+            class="contact-img"
+            src="/outerbank/assets/contact-bg-mob-97256e51.jpg"
+            alt="Screenshot of the game"
+            width="375"
+            height="307"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="footer-bg-wrapper">
+    <div class="container footer-container">
+      <div class="footer-content-wrapper">
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a class="footer-link" href="./privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-link" href="./terms-and-conditions.html"
+                >Terms Of Service</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="footer-text">© 2026 outerbank.pro — All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div class="context-menu">
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#home">Home</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#about"
+          >About the Game</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gameplay"
+          >How to Play</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#features"
+          >Core Systems</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#progression"
+          >Visual Style</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gallery">Gallery</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#experience"
+          >Gameplay Loop</a
+        >
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#faq">FAQ</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+    
+  </body>
+</html>
