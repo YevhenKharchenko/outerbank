@@ -1,6 +1,5 @@
 .footer {
-  background: #edddcb;
-  border-top: 1px solid #edddcb;
+  background: #14181f;
 
   @include media(desktop) {
   }
@@ -42,7 +41,7 @@
   gap: 64px;
 
   @include media(desktop) {
-    gap: 104px;
+    gap: 94px;
   }
 }
 
@@ -50,25 +49,25 @@
 }
 
 .footer-link {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #2d4053;
+  color: #f3f0e8;
 
   @include media(desktop) {
   }
 }
 
 .footer-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #2d4053;
+  color: #f3f0e8;
 
   @include media(desktop) {
   }

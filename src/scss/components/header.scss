@@ -1,6 +1,5 @@
 .header {
-  backdrop-filter: blur(5px);
-  background: rgba(255, 247, 238, 0.5);
+  background: #14181f;
   padding: 8px 0;
   position: fixed;
   width: 100%;
@@ -8,7 +7,7 @@
   z-index: 10;
 
   @include media(desktop) {
-    padding: 8px 0;
+    padding: 16px 0;
   }
 }
 
@@ -52,11 +51,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Reddit Sans', sans-serif;
     font-weight: 300;
     font-size: 12px;
     line-height: 1.5;
-    color: #6b7a8c;
+    color: #a8b0bf;
     opacity: 0.8;
     width: 100%;
     max-width: max-content;
@@ -67,12 +66,29 @@
       opacity 0.3s ease-in-out,
       text-shadow 0.3s ease-in-out;
 
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: #4a8c52;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
     &:hover,
     &:focus,
     &:active,
     &.active {
       text-shadow: 0 0 0 currentColor;
       opacity: 1;
+
+      &::after {
+        transform: scaleX(1);
+      }
     }
   }
 }
@@ -98,9 +114,7 @@
 }
 
 .menu-icon {
-  stroke: #2d4053;
 }
 
 .close-icon {
-  stroke: #2d4053;
 }

@@ -1,7 +1,6 @@
 .context-menu {
   display: none;
-  backdrop-filter: blur(5px);
-  background: rgba(255, 247, 238, 0.5);
+  background: #14181f;
   padding: 32px 16px 32px;
   max-width: 375px;
   width: 100%;
@@ -34,11 +33,11 @@
   justify-content: center;
   align-items: center;
   padding: 8px 0px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
-  color: #2d4053;
+  color: #f3f0e8;
   opacity: 0.8;
   width: 100%;
   margin-left: auto;
@@ -50,9 +49,26 @@
     opacity 0.3s ease-in-out,
     text-shadow 0.3s ease-in-out;
 
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #4a8c52;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
   &:active {
     text-shadow: 0 0 0 currentColor;
     opacity: 1;
+
+    &::after {
+      transform: scaleX(1);
+    }
   }
 }
 
