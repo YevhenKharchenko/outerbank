@@ -5,13 +5,12 @@
 
 .about-bg-wrapper {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-bottom: 120px;
     max-width: 1440px;
   }
 }
@@ -31,19 +30,26 @@
   }
 }
 
-.about-text {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #2d4053;
-  max-width: 323px;
+.about-img {
+  box-shadow: 0 0 1px 2px #a8b0bf;
+  border-radius: 2px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 64px;
 
   @include media(desktop) {
-    max-width: max-content;
+  }
+}
+
+.about-text {
+  font-family: 'Reddit Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #f3f0e8;
+
+  @include media(desktop) {
   }
 }
 

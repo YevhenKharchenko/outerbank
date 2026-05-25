@@ -1,5 +1,4 @@
 .contact-section {
-  background: #edddcb;
 }
 
 .contact-section-wrapper {
@@ -34,16 +33,18 @@
 }
 
 .contact-subtitle {
+  margin-bottom: 48px;
+
   @include media(desktop) {
   }
 }
 
 .contact-email-link {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
-  color: #2d4053;
+  color: #f3f0e8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +62,7 @@
 }
 
 .contact-img {
-  margin-top: 48px;
+  margin-top: 64px;
   margin-left: auto;
   margin-right: auto;
 

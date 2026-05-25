@@ -1,12 +1,11 @@
 .experience-section {
-  background: #edddcb;
-
   @include media(desktop) {
   }
 }
 
 .experience-bg-wrapper {
   padding-top: 80px;
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -17,36 +16,32 @@
 }
 
 .experience-container {
-  padding: 0;
-
   @include media(desktop) {
   }
 }
 
 .experience-content-wrapper {
-  padding: 0 16px;
-
   @include media(desktop) {
-    padding: 0 120px;
   }
 }
 
 .experience-subtitle {
+  margin-bottom: 64px;
+
   @include media(desktop) {
   }
 }
 
 .experience-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #2d4053;
+  color: #f3f0e8;
   margin-bottom: 48px;
 
   @include media(desktop) {
-    margin-bottom: 64px;
   }
 }
 
@@ -59,51 +54,41 @@
   @include media(desktop) {
     flex-direction: row;
     justify-content: center;
-    align-items: start;
+    align-items: stretch;
   }
 }
 
 .experience-slide {
-  padding: 0 16px;
+  box-shadow: inset 0 0 14px 1px rgba(42, 44, 54, 0.5);
+  background: #313640;
+  border: 1px solid #a8b0bf;
+  border-radius: 4px;
+  padding: 23px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
   width: 100%;
-  max-width: 263px;
+  max-width: 283px;
 
   @include media(desktop) {
-    gap: 32px;
+    padding: 23px 47px;
+    max-width: 233px;
   }
 }
 
-.experience-icon {
-  min-width: 48px;
-
+.experience-img {
   @include media(desktop) {
   }
 }
 
 .experience-item-text {
-  padding-top: 16px;
-  border-top: 1px solid #ff7f6a;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #2d4053;
-  width: 100%;
-
-  @include media(desktop) {
-    padding-top: 31px;
-  }
-}
-
-.experience-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 48px;
+  color: #f3f0e8;
 
   @include media(desktop) {
   }

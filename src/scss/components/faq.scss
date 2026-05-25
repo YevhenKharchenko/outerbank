@@ -5,7 +5,7 @@
 
 .faq-bg-wrapper {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -21,6 +21,8 @@
 }
 
 .faq-subtitle {
+  margin-bottom: 64px;
+
   @include media(desktop) {
   }
 }
@@ -49,7 +51,7 @@
 }
 
 .faq-item-question-wrapper {
-  border-bottom: 2px solid #edddcb;
+  border-bottom: 2px solid #313640;
   padding-top: 8px;
   padding-bottom: 6px;
 
@@ -93,11 +95,11 @@
 }
 
 .faq-btn-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 1.5;
-  color: #2d4053;
+  color: #f3f0e8;
   text-align: left;
 
   @include media(desktop) {
@@ -105,11 +107,11 @@
 }
 
 .faq-bottom-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
-  color: #6b7a8c;
+  color: #a8b0bf;
 
   @include media(desktop) {
   }

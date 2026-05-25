@@ -5,7 +5,7 @@
 
 .features-bg-wrapper {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +26,11 @@
 }
 
 .features-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.features-secondary-subtitle {
   @include media(desktop) {
   }
 }
@@ -51,12 +56,12 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 190px;
+    max-width: 230px;
   }
 }
 
-.features-icon {
-  min-width: 48px;
+.features-img {
+  min-width: 120px;
 
   @include media(desktop) {
   }
@@ -70,28 +75,26 @@
 }
 
 .features-item-title {
-  padding-bottom: 7px;
-  border-bottom: 1px solid #ff7f6a;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #4b5b4a;
+  font-family: 'Reddit Sans', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #2d4053;
-  margin-bottom: 8px;
+  color: #f3f0e8;
+  margin-bottom: 16px;
 
   @include media(desktop) {
-    padding-bottom: 15px;
     text-align: center;
-    margin-bottom: 16px;
   }
 }
 
 .features-item-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 1.5;
-  color: #6b7a8c;
+  color: #a8b0bf;
 
   @include media(desktop) {
     text-align: center;

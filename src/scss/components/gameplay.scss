@@ -1,18 +1,14 @@
 .gameplay-section {
-  background: #edddcb;
-
   @include media(desktop) {
   }
 }
 
 .gameplay-bg-wrapper {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
-  position: relative;
 
   @include media(desktop) {
     max-width: 1440px;
@@ -23,41 +19,45 @@
 }
 
 .gameplay-subtitle {
+  margin-bottom: 64px;
+
   @include media(desktop) {
   }
 }
 
-.gameplay-swiper-container {
-  max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 
   @include media(desktop) {
-    max-width: 1440px;
-  }
-}
-
-.gameplay-swiper-container.show {
-  visibility: visible;
-}
-
-.gameplay-swiper-wrapper {
-  @include media(desktop) {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
   }
 }
 
 .gameplay-slide {
-  max-width: 280px;
+  width: 100%;
+  max-width: 333px;
 
   @include media(desktop) {
-    max-width: 200px;
+    &:nth-child(4) {
+      max-width: 520px;
+    }
+
+    &:nth-child(5) {
+      max-width: 520px;
+    }
   }
 }
 
 .gameplay-img {
+  box-shadow: 0 0 1px 1px #a8b0bf;
+  border-radius: 4px;
+
   @include media(desktop) {
   }
 }

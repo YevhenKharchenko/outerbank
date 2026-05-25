@@ -1,18 +1,14 @@
 .progression-section {
-  background: #edddcb;
-
   @include media(desktop) {
   }
 }
 
 .progression-bg-wrapper {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
-  position: relative;
 
   @include media(desktop) {
     max-width: 1440px;
@@ -20,6 +16,13 @@
 }
 
 .progression-container {
+  @include media(desktop) {
+  }
+}
+
+.progression-content-wrapper {
+  @include media(desktop) {
+  }
 }
 
 .progression-subtitle {
@@ -27,60 +30,33 @@
   }
 }
 
-.progression-text {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #2d4053;
-  margin-bottom: 48px;
-
-  @include media(desktop) {
-  }
-}
-
-.progression-swiper-container {
-  max-width: 290px;
+.progression-img {
+  box-shadow: 0 0 1px 2px #a8b0bf;
+  border-radius: 2px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 64px;
 
   @include media(desktop) {
-    max-width: 1440px;
   }
 }
 
-.progression-swiper-container.show {
-  visibility: visible;
-}
+.progression-text {
+  font-family: 'Reddit Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #f3f0e8;
 
-.progression-swiper-wrapper {
   @include media(desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
   }
 }
 
-.progression-slide {
-  max-width: 290px;
+.progression-br {
+  display: none;
 
   @include media(desktop) {
-    width: 100% !important;
-    max-width: 343px;
-
-    &:nth-child(4) {
-      max-width: 530px;
-    }
-
-    &:nth-child(5) {
-      max-width: 530px;
-    }
-  }
-}
-
-.progression-img {
-  @include media(desktop) {
+    display: block;
   }
 }

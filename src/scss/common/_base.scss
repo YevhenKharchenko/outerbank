@@ -66,6 +66,13 @@ html {
   }
 }
 
+.title-img {
+  min-width: 32px;
+
+  @include media(desktop) {
+  }
+}
+
 .section-title {
   padding-bottom: 7px;
   padding-left: 4px;
@@ -74,8 +81,8 @@ html {
   font-weight: 400;
   font-size: 10px;
   text-transform: uppercase;
-  text-align: center;
   color: #a8b0bf;
+  width: 100%;
 
   @include media(desktop) {
   }
